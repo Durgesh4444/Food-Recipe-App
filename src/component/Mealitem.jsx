@@ -10,7 +10,7 @@ const Mealitem = (props) => {
   return (
     <>
     {
-      (!data)? "Not Found" : data.map(item =>
+      (!data)?  <h1 className='not'>Not Found</h1>: data.map(item =>
         <div className="card" key={item.idMeal} onClick={() =>{navigate(`/${item.idMeal}`)}}>
             <img src={item.strMealThumb} alt="" />
             <h2>{item.strMeal}</h2>
