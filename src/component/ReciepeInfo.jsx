@@ -6,7 +6,7 @@ const ReciepeInfo = () => {
 
   // eslint-disable-next-line 
 
-  const [className, setClassName] = useState();
+  
 // eslint-disable-next-line 
   let vid;
 
@@ -39,16 +39,16 @@ const ReciepeInfo = () => {
                 <h2>Category :{item.strCategory}</h2> */}
               <h1>Ingradient</h1>
               <div className="name">
-                <h4 className={className}>
+                <h4>
                   {item.strIngredient1.toUpperCase()} {"  :  "}{item.strMeasure1}
                 </h4>
-                <h4 className={className}>
+                <h4>
                   {item.strIngredient2.toUpperCase()} {"  :  "}{item.strMeasure2}
                 </h4>
-                <h4 className={className}>
+                <h4 >
                   {item.strIngredient3.toUpperCase()} {"  :  "}{item.strMeasure3}
                 </h4 >
-                <h4 className={className}>
+                <h4>
                   {item.strIngredient4.toUpperCase()} {"  :  "}{item.strMeasure4}
                 </h4>
                 
