@@ -1,38 +1,301 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Bona+Nova&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "League Spartan", sans-serif;
+}
+
+body {
+  background-repeat: no-repeat;
+}
+
+.main {
+  width: 80%;
   text-align: center;
+  margin: 50px auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.heading {
+  text-align: left;
+  background: linear-gradient(70deg, rgba(0, 212, 255, 1) 10%, #fff 100%);
+  color: #fff;
+  text-shadow: 2px 2px 3px #000000;
+  line-height: 1.5;
+  border-radius: 20px;
+  padding: 40px 0;
+  transition: 0.8s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.heading:hover {
+  background: linear-gradient(15deg, #fff 60%, rgba(0, 212, 255, 1));
+  color: rgb(14, 192, 237);
+  text-shadow: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.heading h1 {
+  padding-left: 50px;
+  letter-spacing: 1.5px;
+  font-weight: 800;
+  font-size: 35px;
+}
+
+.heading h2 {
+  padding-left: 50px;
+  letter-spacing: 1px;
+}
+
+.searchbox {
+  padding: 40px 0;
+}
+
+::placeholder {
+  color: #12b0e8;
+  opacity: 0.4; /* Firefox */
+  font-size: 15px;
+}
+
+
+.searchbox .search-bar {
+  outline: none;
+  border-radius: 20px;
+  background-color: #e2ecef;
+  border: none;
+  width: 40%;
+  height: 40px;
+  padding: 0 20px;
+  color: #12b0e8;
+  font-size: 17px;
+  font-weight: 500;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.searchbox button {
+  background-color: #12b0e8;
+  color: #fff;
+  width: 10%;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.searchbox button:hover {
+  background-color: #0b3848;
+}
+
+.container {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+
+}
+
+.card{
+  width: 375px;
+}
+.card img {
+  width: 375px;
+  height: 280px;
+  border-radius: 20px;
+ 
+}
+
+.card h2 {
+  padding: 15px; 
+  margin-bottom: 0;
+  font-size: 22px;
+  text-align: left;
+}
+.card h3 {
+color: #12b0e8;
+text-align: left;
+
+}
+.index-container{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 50px 0;
+
+}
+.numBox{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #12b0e8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.5s;
+  
+}
+
+.numBox:hover{
+background-color: #0b3848;
+}
+
+
+/* reciepiinfo */
+.tittle{
+  width: 80%;
+  padding: 40px;
+  text-align: center;
+  color:#fff;
+  text-shadow: 2px 2px 4px #000;
+  border-radius: 20px;
+  margin: 50px auto;
+  background: linear-gradient(70deg, rgba(0, 212, 255, 1) 10%, #fff 100%);
+}
+.content{
+  width: 85%;
+  margin: 50px auto;
+  display: flex;
+  background: linear-gradient(70deg, rgba(0, 212, 255, 1) 10%, #fff 100%);
+  border-radius: 20px;
+  
+}
+
+.content .img{
+  width: 50%;
+  height: 500px;
+  border-radius: 20px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+
+}
+
+.inner-content{
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 20px;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000;
+  font-size: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.ingredent{
+  width: 85%;
+  margin: 50px auto;
+}
+.name{
+  line-height: 2;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.instruction{
+  width: 85%;
+  margin: 50px auto;
+}
+
+.instruction h1{
+  color: #12b0e8;
+}
+
+.instruction h3{
+  padding: 20px 0;
+  font-weight: 200;
+  line-height: 1.5;
+}
+
+.youtube{
+  width: 85%;
+  margin: 50px auto;
+}
+
+.youtube iframe{
+  width: 100%;
+  height: 500px;
+}
+
+
+/* ipad respoansive */
+@media (max-width:850px) {
+  .main {
+    width: 90%;
+    margin: 30px auto;
+}
+
+.searchbox .search-bar {
+  width: 70%;
+}
+
+.card {
+  width: 330px;
+}
+
+.card img{
+  width: 310px;
+}
+.searchbox button {
+  
+  width: 14%;
+  
+}
+}
+/* mobile responsive  */
+
+@media (max-width:425px) {
+  .heading h1, .heading h2 {
+    padding-left: 25px;
+}
+.searchbox .search-bar {
+  width: 78%;
+}
+.searchbox button {
+  width: 20%;
+  font-size: 14px;
+}
+::placeholder {
+  font-size: 13px;
+}
+.card img {
+  width: 100%;
+}
+/* details  */
+.tittle {
+  width: 70%;
+  margin:15px auto;
+ 
+}.content {
+  width: 90%;
+  flex-direction: column;
+  
+}
+
+.content .img {
+  width: 100%;
+  height: 400px;
+  border-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  
+}
+
+.inner-content {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  color: #fff;
+  font-size: 18px;
+  padding: 20px 15px;
+}
+.youtube iframe{
+  height: 300px;
+}
 }
