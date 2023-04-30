@@ -31,7 +31,7 @@ const ReciepeInfo = () => {
         ""
       ) : (
         <>
-          <h1 className="tittle">{item.strMeal}</h1>
+          <h1 className="tittle">{item.strMeal.toUpperCase()}</h1>
           <div className="content">
             <img className="img" src={item.strMealThumb} alt="img" />
             <div className="inner-content">
